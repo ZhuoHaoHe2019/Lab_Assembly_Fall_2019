@@ -13,10 +13,11 @@ start:
 
     mov cx,40
 
-    mov edx,0
+    
 s:  
     ;eax入栈，并调用fibo函数
     push eax
+    mov edx,0
     call fibo
     ;调用打印输出函数
     call printf
